@@ -15,12 +15,8 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * Testes dos requisitos do item 3, usando os mesmos dados da tabela do enunciado.
- */
 class FuncionarioServiceTest {
 
-    /** Data fixa usada nos cálculos de idade, para o teste não depender do dia da execução. */
     private static final LocalDate DATA_REFERENCIA = LocalDate.of(2026, 9, 14);
 
     private FuncionarioService service;
@@ -92,7 +88,7 @@ class FuncionarioServiceTest {
 
         assertEquals("Caio", maisVelho.getNome());
         assertEquals(65, service.idade(maisVelho, DATA_REFERENCIA));
-        // um dia antes do aniversário de 2026 (02/05), a idade ainda é 64
+
         assertEquals(64, service.idade(maisVelho, LocalDate.of(2026, 5, 1)));
     }
 

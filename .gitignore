@@ -1,9 +1,6 @@
-# Saídas de build (Maven, javac, Code Runner)
 target/
 *.class
 *.jar
-
-# Metadados de IDE (Eclipse/JDT usados pela extensão Java do VS Code)
 .classpath
 .project
 .settings/

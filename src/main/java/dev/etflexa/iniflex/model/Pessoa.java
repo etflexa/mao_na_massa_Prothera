@@ -3,13 +3,6 @@ package dev.etflexa.iniflex.model;
 import java.time.LocalDate;
 import java.util.Objects;
 
-/**
- * Item 1 do teste prático: pessoa da indústria.
- *
- * <p>Os atributos são imutáveis porque a identidade de uma pessoa (nome e data de
- * nascimento) não muda ao longo do processamento; apenas o salário do funcionário
- * é atualizado (item 3.4).</p>
- */
 public class Pessoa {
 
     private final String nome;
@@ -28,10 +21,6 @@ public class Pessoa {
         return dataNascimento;
     }
 
-    /**
-     * Duas pessoas são consideradas a mesma quando têm o mesmo nome e a mesma data
-     * de nascimento.
-     */
     @Override
     public boolean equals(Object outro) {
         if (this == outro) {

@@ -1,7 +1,4 @@
 {
-  // JDK e Maven instalados fora do VS Code (detalhes no README.md).
-  // Os caminhos são absolutos para funcionarem mesmo antes do próximo login,
-  // quando o PATH do sistema ainda não contém o Java.
   "java.jdt.ls.java.home": "/home/teixeiradev/.local/opt/jdk-21",
   "java.configuration.runtimes": [
     {
@@ -12,7 +9,6 @@
   ],
   "maven.executable.path": "/home/teixeiradev/.local/opt/maven/bin/mvn",
 
-  // Code Runner (Ctrl+Alt+N): executa a classe Principal do projeto via Maven.
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
   "code-runner.clearPreviousOutput": true,

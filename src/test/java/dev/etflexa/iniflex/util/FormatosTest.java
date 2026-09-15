@@ -8,9 +8,6 @@ import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Testes da formatação exigida pelo item 3.3.
- */
 class FormatosTest {
 
     @Test
@@ -33,7 +30,7 @@ class FormatosTest {
     @Test
     @DisplayName("3.3 - arredonda os valores com duas casas decimais, como no gabarito")
     void deveArredondarComDuasCasasDecimais() {
-        // salários já aumentados em 10%
+
         assertEquals("2.210,38", Formatos.numero(new BigDecimal("2210.384")));
         assertEquals("1.740,99", Formatos.numero(new BigDecimal("1740.992")));
         assertEquals("3.319,20", Formatos.numero(new BigDecimal("3319.195")));

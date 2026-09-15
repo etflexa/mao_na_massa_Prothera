@@ -7,20 +7,12 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Item 3.1: funcionários da indústria exatamente na mesma ordem e com as mesmas
- * informações da tabela do enunciado.
- */
 public final class FuncionariosIniciais {
 
     private FuncionariosIniciais() {
-        // classe utilitária: não deve ser instanciada
+
     }
 
-    /**
-     * @return lista mutável (o item 3.2 remove um funcionário e o item 3.4 altera
-     *         os salários) com os 10 funcionários da tabela, na ordem original.
-     */
     public static List<Funcionario> criar() {
         List<Funcionario> funcionarios = new ArrayList<>();
 
